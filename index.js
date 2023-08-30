@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/about', (req, res) => {
-  res.render('about')
+  res.json({message: "Success By Hamamd"})
 })
 
 
