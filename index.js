@@ -1,6 +1,6 @@
 // const express = require('express')
 // const app = express()
-// const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 
 // app.get('/', (req, res) => {
 //   res.send("Hey by hammad")
@@ -47,8 +47,8 @@ app.use(cors());
 app.use("/v1", FreelancerRoutes);
 app.use("/v1", BuyerRoutes);
 
-app.listen(APP_PORT, () => {
-  console.log(`app  on port ${APP_PORT}`);
+app.listen(3000, () => {
+  console.log(`app  on port 3000`);
 });
 
 app.use(ErrorMiddleware);
